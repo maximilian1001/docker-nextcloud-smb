@@ -1,4 +1,4 @@
-FROM nextcloud:28-apache
+FROM nextcloud:29-apache
 
 # replaced smbclient because of errors on files >512MB
 # RUN apt-get update && apt-get install -y procps smbclient && rm -rf /var/lib/apt/lists/*
