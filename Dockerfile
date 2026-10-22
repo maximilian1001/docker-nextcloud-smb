@@ -2,7 +2,7 @@
 # Successor: https://github.com/maximilian1001/docker-all-nextcloud-smb
 # This final build keeps the base version and only adds a periodic deprecation
 # notice to the container log (every DEPRECATION_NOTICE_INTERVAL seconds, default 3600, 0 = only at start).
-FROM nextcloud:30-apache
+FROM nextcloud:31-apache
 
 LABEL org.opencontainers.image.description="DEPRECATED – use ghcr.io/maximilian1001/docker-all-nextcloud-smb" \
       org.opencontainers.image.source="https://github.com/maximilian1001/docker-nextcloud-smb"
