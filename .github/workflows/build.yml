@@ -3,10 +3,9 @@ name: build
 on:
   push:
     branches:
-      - '**'
+      - master   # frozen image: only the final master build may push (no PR/Dependabot branches)
     tags-ignore:
       - '*.*'
-  pull_request:
   workflow_dispatch:
   
 env:
